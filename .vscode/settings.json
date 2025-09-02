@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "chalange.C": "cpp"
+        "chalange.C": "cpp",
+        ".C": "cpp"
     }
 }
