@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "chalange.C": "cpp",
-        ".C": "cpp"
+        ".C": "cpp",
+        "Variables.C": "cpp",
+        "condition.C": "cpp"
     }
 }
