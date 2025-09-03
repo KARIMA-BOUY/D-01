@@ -1,22 +1,20 @@
 #include <stdio.h>
 
 
-// Écrivez un programme qui demande un nombre et affiche si ce nombre est pair ou impair.
-// int main() {
-//     int nombre;
-//     printf("Entrez un nombre entier : ");
-//     scanf("%d", &nombre);
-//     if (nombre % 2 == 0) {
-//         printf("%d est pair.\n", nombre);
-//     } else {
-//         printf("%d est impair.\n", nombre);
-//     }
-//     return 0;
-// }
+Écrivez un programme qui demande un nombre et affiche si ce nombre est pair ou impair.
+int main() {
+    int nombre;
+    printf("Entrez un nombre entier : ");
+    scanf("%d", &nombre);
+    if (nombre % 2 == 0) {
+        printf("%d est pair.\n", nombre);
+    } else {
+        printf("%d est impair.\n", nombre);
+    }
+    return 0;
+}
 
-// Voyelle ou Non
-// Écrivez un programme en C qui vérifie si un caractère saisi
-//  par l'utilisateur est une voyelle ou non en utilisant l'instruction switch case.
+// Voyelle ou Non:
 
 #include <stdio.h>
 
@@ -37,55 +35,112 @@ int main() {
     }
     return 0;
 // }
-// Challenge 3 : Somme de Deux Valeurs
-// Écrivez un programme C pour calculer la somme de deux valeurs entières données. 
-// Si les deux valeurs sont identiques, le programme doit renvoyer le triple de leur somme.
+// Challenge 3 : Somme de Deux Valeurs:
 
-// #include <stdio.h>
-
-// int main() {
-//     int a, b, somme;
-//     printf("Entrez la première valeur : ");
-//     scanf("%d", &a);
-//     printf("Entrez la deuxieme valeur : ");
-//     scanf("%d", &b);
-//     if (a == b) {
-//         somme = 3 * (a + b);  /
-//     } else {
-//         somme = a + b;        
-//     }
-//     printf("Le resultat est : %d\n", somme);
-//     return 0;
-// }
+int main() {
+    int a, b, somme;
+    printf("Entrez la première valeur : ");
+    scanf("%d", &a);
+    printf("Entrez la deuxieme valeur : ");
+    scanf("%d", &b);
+    if (a == b) {
+        somme = 3 * (a + b);  /
+    } else {
+        somme = a + b;        
+    }
+    printf("Le resultat est : %d\n", somme);
+    return 0;
+}
 //  Equation du Deuxième Degré:
-// Écrivez un programme C qui permet de calculer les solutions possibles d’une équation du deuxième degré.
+
+int main() {
+    float a, b, c, delta, x1, x2;
+
+    printf("Entrez a : ");
+    scanf("%f", &a);
+    printf("Entrez b : ");
+    scanf("%f", &b);
+    printf("Entrez c : ");
+    scanf("%f", &c);
+    if (a == 0) {
+        printf(" n est pas une quation \n");
+    } else {
+        delta = b*b - 4*a*c;
+
+        if (delta > 0) {
+            x1 = (-b - sqrt(delta)) / (2*a);
+            x2 = (-b + sqrt(delta)) / (2*a);
+            printf("Deux solutions  : x1 = %.2f et x2 = %.2f\n", x1, x2);
+        }
+        else if (delta == 0) {
+            x1 = -b / (2*a);
+            printf("Une solution  : x = %.2f\n", x1);
+        }
+        else {
+            printf("Pas de solutions.\n");
+        }
+    }
+    return 0;
+}
+
+// Challenge 6 : Positif, Négatif ou Nul:
+
+int main() {
+    int n;
+    printf("Entrez un nombre : ");
+    scanf("%d", &n);
+
+    if (nombre > 0) {
+        printf("%d est positif.\n", n);
+    }
+    else if (nombre < 0) {
+        printf("%d est negatif.\n", n);
+    }
+    else {
+        printf("Le nombre est nul.\n");
+    }
+    return 0;
+}
+
+// Challenge 7 : Alphabet Majuscule:
+
 // int main() {
-//     float a, b, c, delta, x1, x2;
+    char c;
+    printf("Entrez un caractere : ");
+    scanf("%c", &c);
 
-//     printf("Entrez a : ");
-//     scanf("%f", &a);
-//     printf("Entrez b : ");
-//     scanf("%f", &b);
-//     printf("Entrez c : ");
-//     scanf("%f", &c);
-//     if (a == 0) {
-//         printf(" n est pas une quation \n");
-//     } else {
-//         delta = b*b - 4*a*c;
+    if (c >= 'A' && c <= 'Z') {
+        printf("%c est une lettre majuscule.\n", c);
+    } else {
+        printf("%c n'est pas une lettre majuscule.\n", c);
+    }
+    return 0;
+}
 
-//         if (delta > 0) {
-//             x1 = (-b - sqrt(delta)) / (2*a);
-//             x2 = (-b + sqrt(delta)) / (2*a);
-//             printf("Deux solutions  : x1 = %.2f et x2 = %.2f\n", x1, x2);
-//         }
-//         else if (delta == 0) {
-//             x1 = -b / (2*a);
-//             printf("Une solution  : x = %.2f\n", x1);
-//         }
-//         else {
-//             printf("Pas de solutions.\n");
-//         }
-//     }
-//     return 0;
-// }
+// Challenge 8 : Mention Obtenue:
+
+// int main() {
+    float moyenne;
+
+    printf("Entrez la moyenne  : ");
+    scanf("%f", &moyenne);
+
+    if (moyenne < 10) {
+        printf("Recale\n");
+    } else if (moyenne >= 10 && moyenne < 12) {
+        printf("Mention : Passable\n");
+    } else if (moyenne >= 12 && moyenne < 14) {
+        printf("Mention : Assez bien\n");
+    } else if (moyenne >= 14 && moyenne < 16) {
+        printf("Mention : Bien\n");
+    } else if (moyenne >= 16) {
+        printf("Mention : Tres bien\n");
+    }
+
+    return 0;
+}
+
+
+
+
 
