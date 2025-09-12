@@ -4,5 +4,6 @@
         ".C": "cpp",
         "Variables.C": "cpp",
         "condition.C": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
